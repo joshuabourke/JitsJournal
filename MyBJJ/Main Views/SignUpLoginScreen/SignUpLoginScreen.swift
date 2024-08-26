@@ -145,7 +145,7 @@ struct SignUpLoginScreen: View {
                     do {
                         try await authService.signIn(email: loginEmail,password: loginPassword)
                     } catch {
-                        print("### Error trying to login \(error.localizedDescription)")
+                        print("### Error trying to login \(error)")
                     }
                 }
             } label: {

@@ -27,6 +27,7 @@ public enum EnvironmentKeys {
         guard let urlString = EnvironmentKeys.infoDictionary[Keys.url] as? String else {
             fatalError("Url not set in plist")
         }
+        print("### URL \(urlString)")
         return urlString
     }()
     
@@ -34,6 +35,7 @@ public enum EnvironmentKeys {
         guard let apiString = EnvironmentKeys.infoDictionary[Keys.apiKey] as? String else {
             fatalError("Api key not set in plist")
         }
+        print("### API \(apiString)")
         return apiString
     }()
 }
